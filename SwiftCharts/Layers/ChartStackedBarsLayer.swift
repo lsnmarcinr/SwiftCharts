@@ -12,7 +12,7 @@ public typealias ChartStackedBarItemModel = (quantity: Double, bgColor: UIColor)
 
 open class ChartStackedBarModel: ChartBarModel {
 
-    let items: [ChartStackedBarItemModel]
+    open let items: [ChartStackedBarItemModel]
     
     public init(constant: ChartAxisValue, start: ChartAxisValue, items: [ChartStackedBarItemModel]) {
         self.items = items
